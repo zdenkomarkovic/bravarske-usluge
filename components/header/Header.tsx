@@ -93,20 +93,21 @@ const MobileMenu = () => (
 );
 
 const DesktopNav = () => (
-  <ul className="hidden gap-8 lg:flex text-white text-xl">
+  <ul className="hidden gap-8 lg:flex text-primary text-xl">
     {navList.map((item, index) => {
       if (item.list)
         return (
           <HoverCard key={index} openDelay={0} closeDelay={50}>
             <HoverCardTrigger>
               <motion.div
-                whileHover={{ color: "hsl(var(--primary))" }}
+                whileHover={{ color: "hsl(var(--primary))", scale: 1.1 }}
                 className="flex gap-1 transition-colors"
               >
                 {item.title}
                 <ChevronDownIcon className="w-[18px]" />
               </motion.div>
             </HoverCardTrigger>
+
             <HoverCardContent className="p-0">
               {item.list.map((link, index2) => (
                 <motion.li
@@ -170,16 +171,16 @@ export default function Header() {
           />
         </Link>
         <DesktopNav />
-        <Link href="tel:+3816">
+        <Link href="tel:+381611410147">
           <motion.button
             whileHover={{
               color: "hsl(var(--foreground))",
               backgroundColor: "hsl(var(--primary))",
             }}
-            className=" items-center justify-center rounded-full text-primary border-primary border-2 text-sm md:text-lg py-1 px-2 md:py-2 md:px-4 transition-colors flex"
+            className=" items-center justify-center rounded-full text-primary border-blue-600  border-2 text-sm md:text-lg py-1 px-2 md:py-2 md:px-4  flex"
           >
             <PhoneIcon />
-            <p className="">+38160 000 000</p>
+            <p className="">+38161 141 0147</p>
           </motion.button>
         </Link>
         <MobileMenu />

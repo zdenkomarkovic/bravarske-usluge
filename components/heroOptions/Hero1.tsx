@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import HeroImg from '@/../public/hero.jpg';
+import HeroImg from '@/../public/hero1.jpg';
 
 const Hero = () => (
   <div className='relative flex justify-center '>
