@@ -10,7 +10,7 @@ const BackgroundPaths = () => {
         <motion.div
           initial={{ x: -100, opacity: 0 }} // Naizmenično levo/desno
           whileInView={{ x: 0, opacity: 1 }} // Animira se ka centru
-          transition={{ duration: 2, ease: "easeOut" }}
+          transition={{ duration: 1.4, ease: "easeOut" }}
           viewport={{ once: true }}
           className="max-w-4xl text-center"
         >
